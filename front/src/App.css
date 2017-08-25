@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+  background-color: black;
+  width: 50%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.AddOne {
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 75%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: 'Press Start 2P', cursive;
+}
+
+@keyframes code {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+.Add1TitleCode {
+  font-size: 15vw;
+  animation: code 0.5s alternate linear infinite
+}
+
+.Add1Title {
+  font-size: 15vw;
+}
+
+@keyframes addonestart {
+  from {color: white;}
+  to {color: black;}
+}
+
+.Add1Start {
+  font-size: 1.5vmax;
+}
+
+.Add1StartEnter {
+  animation: addonestart 0.75s linear 2s infinite alternate;
+}
+
+.Add1Countdown {
+  font-size: 7.5vw;
+}
+
+.Add1Click {
+  font-size: 1vw;
+  position: fixed;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.PressAnyKey {
+  animation: addonestart 1s linear 8s infinite alternate;
+}
+
+.Add1YouWin {
+  font-size: 7.5vw;
+}
+
+.Add1Button {
+  font-size: 20vmax;
+  background-color: black
+}
+
+.Add1EnterName {
+  font-size: 1.5vmax;
+}
+
+.Add1Submit {     
+  background-color: black;
+  color: white;   
+  border-style: none;  
+  font-size: 1.5vmax;
+  font-family: 'Press Start 2P', cursive;   
+}
+
+.Flash {
+  display: none;
+}
+
+td {
+  padding: 1vh;
+  margin: 0.5vh 0;
+}
+
+.Left {
+  text-align: left;
+}
+
+.Right {
+  text-align: right;
+}
+
+.Add1Credits {
+  font-size: 0.75vw;
+  position: fixed;
+  left: 50%;
+  top: 95%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.Add1CreditsPage {
+  width: 40%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.RollCredits {
+  animation: slidein 4s linear;
+}
+
+.Add1CreditsPageThankYou {
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+
+.Add1CreditsPageParagraph {
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+}
+
+.Add1CreditsPageEmail {
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+}
+
+.Add1CreditsPageEnterHome {
+  font-size: 1.5vh;
+  line-height: 1.5vw;
+}
+
+@keyframes slidein {
+  
+  from {
+      margin-top: 400%;
+      width: 100%; 
+      }
+  
+  to {
+      margin-top: 0%;
+      width: 100%;
+      }
+  
+  }
+
+@keyframes yorn {
+  from {color: white;}
+  to {color: black;}
+}
+
+.YORNSelected {
+  animation: addonestart 0.5s linear infinite alternate;
+}
+
+.YesOrNo {
+  font-size: 3vmax;
+}
+
+input[type=text] {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  font-family: 'Press Start 2P', cursive; 
+  padding: 0.5vh;
+  margin: 0.50vh 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 0.20vmax solid white;
+}
+
+.Centered {
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5vmax;
+}
+
+.BlackBG {
+  text-align: center;
+  color: white;
+  background-color: black;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 100%;
+  width: 100%;
+}
+
+.AppText {
+  color: black;
+}
+
+body {
+  cursor: none;
+}
