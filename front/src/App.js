@@ -3,6 +3,7 @@ import axios from 'axios'
 import './App.css'
 
 class App extends Component {
+
   constructor() {
     super()
     this.state = {
@@ -34,6 +35,7 @@ class App extends Component {
     this.escForCredits = this.escForCredits.bind(this)
     this.enterHome = this.enterHome.bind(this)
   }
+
   render() {
 
     const screen = [<Start next={this.nextComponent} kcode={this.state.code} credits={this.escForCredits} />,
@@ -278,8 +280,8 @@ class App extends Component {
     }
     if ((e.keyCode === 27) && this.state.displayComponent === 0) {
       this.escForCredits()
-    }
-    if ((e.keyCode === 13) && this.state.displayComponent === 6) {
+    } else
+    if ((e.keyCode === 27) && this.state.displayComponent === 6) {
       this.enterHome()
     }
   }
@@ -304,7 +306,6 @@ class Start extends Component {
       </div>
     )
   }
-
 }
 
 class Countdown extends Component {
@@ -327,7 +328,6 @@ class Countdown extends Component {
       this.props.next()
     }
   }
-
 }
 
 class Add1 extends Component {
@@ -359,18 +359,17 @@ class YouWin extends Component {
       this.props.next()
     }
   }
-
 }
 
 class EnterInitials extends Component {
   render() {
     return (
       <div>
-        <p onClick={this.props.next} className="Add1EnterName">ENTER NAME</p>
+        <p onClick={this.props.next} className="Add1EnterName">TYPE YOUR NAME</p>
         <div>
           <form onSubmit={(e) => { this.props.addI(e) }}>
             <input type="text" id="name" name="name" maxLength="10" size="11" autoFocus pattern="[a-zA-Z0-9]{1,10}" title="LETTERS OR NUMBERS ONLY" /><br /><br />
-            <button id="submit" type="submit" name="DONE" className="Add1Submit">DONE</button>
+            <button id="submit" type="submit" name="DONE" className="Add1Submit">PRESS ENTER TO CONTINUE</button>
           </form>
         </div>
       </div>
@@ -420,11 +419,11 @@ class Credits extends Component {
           WE ALL GET JOBS!</p></span><br />
           <p className="SayHello">
             <span className="Add1CreditsPageEmail">SAY HELLO!<br />THEOTHERJONJANES<br />AT ICLOUD DOT COM</span><br />
-            <span className="Add1CreditsPageEnterHome EnterHomeFlash" onClick={this.props.eHome}>PRESS ENTER TO RETURN HOME</span></p>
+            <span className="Add1CreditsPageEnterHome PressEscToReturnHome" onClick={this.props.eHome}>PRESS ESC TO RETURN HOME</span></p>
         </p>
       </div>
     )
   }
 }
 
-export default App;
+export default App

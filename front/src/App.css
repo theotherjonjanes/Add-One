@@ -49,6 +49,10 @@
   animation: addonestart 0.75s linear 2s infinite alternate;
 }
 
+.PressEscToReturnHome {
+  animation: addonestart 1s linear 20s infinite alternate;
+}
+
 .Add1Countdown {
   font-size: 7.5vw;
 }
@@ -82,7 +86,7 @@
   background-color: black;
   color: white;   
   border-style: none;  
-  font-size: 1.5vmax;
+  font-size: 1vmax;
   font-family: 'Press Start 2P', cursive;   
 }
 
@@ -138,7 +142,7 @@ td {
 }
 
 .Add1CreditsPageEnterHome {
-  font-size: 1.5vh;
+  font-size: 1vh;
   line-height: 1.5vw;
 }
 
